@@ -97,5 +97,5 @@ An interrupt as occurred. Total number: 2
 ```
 - El sistema responde correctamente a las interrupciones por timer, confirmando que el uso de interrupciones es efectivo y eficiente.
 - No se usaron funciones bloqueantes como `delay()`, lo cual permite un mejor control del flujo de ejecución.
-- El sistema se mantiene estable durante largos periodos de funcionamiento.ç
+- El sistema se mantiene estable durante largos periodos de funcionamiento.
 
