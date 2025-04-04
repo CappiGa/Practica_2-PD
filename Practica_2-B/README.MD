@@ -76,8 +76,7 @@ void loop() {
     }
 }
 ```
-Explicación del código:
-
+**Explicación del código:**
 - Se define una función `onTimer()` como ISR, que se ejecuta cuando ocurre la interrupción del temporizador.
 - Se usa `timerBegin()` para inicializar el temporizador 0 con un divisor de 80, haciendo que cada tick equivalga a 1 µs.
 - `timerAlarmWrite()` configura el temporizador para que lance una interrupción cada 1,000,000 µs (1 segundo).
