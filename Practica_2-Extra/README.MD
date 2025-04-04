@@ -9,20 +9,15 @@ En esta práctica se desarrolla un programa en el ESP32-S3 que combina el uso de
 - Controlar dinámicamente la frecuencia de parpadeo de un LED.
 - Filtrar el ruido mecánico de los botones mediante la configuración adecuada.
 
-## 3. Introducción Teórica
-El ESP32-S3 permite utilizar tanto interrupciones por temporizador como interrupciones externas (GPIO). En este caso, se emplea un temporizador para ejecutar una rutina de parpadeo cada cierto tiempo y se modifican los parámetros de dicha rutina a través de pulsaciones en dos botones.
-
-El temporizador se configura para generar una interrupción cada segundo. Al mismo tiempo, se configuran interrupciones en los botones para detectar bordes de bajada (FALLING), permitiendo modificar el intervalo de parpadeo sin necesidad de comprobar manualmente el estado de los botones dentro del bucle principal. Esto mejora la eficiencia y la respuesta del sistema. Se aplican límites para evitar intervalos demasiado cortos (100 ms) o excesivamente largos (5000 ms).
-
-## 4. Materiales
+## 3. Materiales
 - **ESP32-S3**
 - **Protoboard**
 - **2 Pulsadores**
 - **Cable USB tipo C**
 
-## 5. Desarrollo
+## 4. Desarrollo
 
-### 5.1 Preparación del Entorno
+### 4.1 Preparación del Entorno
 1. Configurar el archivo `platformio.ini` con el siguiente contenido:
    ```ini
    [env:esp32-s3-devkitm-1]
@@ -33,7 +28,7 @@ El temporizador se configura para generar una interrupción cada segundo. Al mis
    ```
 2. Conectar el ESP32-S3 al ordenador mediante USB.
 
-### 5.2 Programación del Microcontrolador
+### 4.2 Programación del Microcontrolador
 El código implementado en `main.cpp` es el siguiente:
 ```cpp
 #include <Arduino.h>
@@ -110,12 +105,12 @@ void loop() {
 - La función de temporizador genera una interrupción cada segundo, controlando el parpadeo del LED.
 - Se garantiza que el tiempo de parpadeo esté entre 100 ms y 5000 ms.
 
-### 5.3 Subida del Código al ESP32-S3
+### 4.3 Subida del Código al ESP32-S3
 1. Conectar la placa ESP32-S3.
 2. Compilar y cargar el código (`Upload`).
 3. Abrir el monitor serie (`Monitor`) para verificar los cambios de intervalo al presionar los botones.
 
-## 6. Resultados
+## 5. Resultados
 - Inicialmente, el LED parpadea cada segundo.
 - Al presionar el botón conectado al pin 16, el parpadeo se acelera.
 - Al presionar el botón conectado al pin 17, el parpadeo se ralentiza.
