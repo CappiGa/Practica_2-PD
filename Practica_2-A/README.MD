@@ -31,8 +31,8 @@ Las rutinas de interrupción deben ser lo más breves posible y, en el caso del 
 ## 4. Materiales
 - **ESP32-S3**
 - **Botón**
-- **Protoboard**
 - **Cable tipo C**
+![Image](https://github.com/user-attachments/assets/4bc7a2df-254b-4136-936c-0287cf946e7a)
 
 ## 5. Desarrollo
 
@@ -95,6 +95,7 @@ An interrupt as occurred. Total number: 1
 An interrupt as occurred. Total number: 2
 ...
 ```
+![Image](https://github.com/user-attachments/assets/fbdf6458-f39c-4a5c-9586-bc4aece75eae)
 - El sistema responde correctamente a las interrupciones por timer, confirmando que el uso de interrupciones es efectivo y eficiente.
 - No se usaron funciones bloqueantes como `delay()`, lo cual permite un mejor control del flujo de ejecución.
 - El sistema se mantiene estable durante largos periodos de funcionamiento.
