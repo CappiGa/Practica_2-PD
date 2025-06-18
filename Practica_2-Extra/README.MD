@@ -11,9 +11,9 @@ En esta práctica se desarrolla un programa en el ESP32-S3 que combina el uso de
 
 ## 3. Materiales
 - **ESP32-S3**
-- **Protoboard**
 - **2 Pulsadores**
 - **Cable USB tipo C**
+![Image](https://github.com/user-attachments/assets/47031f83-6c80-4d8a-af97-fefb53ef3c04)
 
 ## 4. Desarrollo
 
@@ -121,3 +121,4 @@ void loop() {
   Interrupts: 3 - Blink Interval: 600
   ...
   ```
+![Image](https://github.com/user-attachments/assets/f1728075-341b-416e-8b84-d5f9c4a17ec4)
