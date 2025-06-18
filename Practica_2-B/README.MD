@@ -25,7 +25,6 @@ Más información sobre este funcionamiento puede consultarse en el siguiente tu
 
 ## 4. Materiales
 - **ESP32-S3**
-- **Protoboard**
 - **Cable USB tipo C**
 
 ## 5. Desarrollo
